@@ -18,6 +18,7 @@ RUN set -eux && \
     apt-get -y update && \
     DEBIAN_FRONTEND=noninteractive apt-get -y \
             --no-install-recommends install \
-        ${INSTALL_PKGS}
+        ${INSTALL_PKGS} && \
+        rm /var/lib/mibs/ietf/SNMPv2-PDU
 
 USER 1997
