@@ -12,8 +12,10 @@ RUN set -eux && \
             libwww-perl \
             libjson-xs-perl \
             libconfig-general-perl \
+            libcurl4 \
             rsyslog \
             nano \
+            curl \
             expect" && \
     apt-get -y update && \
     DEBIAN_FRONTEND=noninteractive apt-get -y \
