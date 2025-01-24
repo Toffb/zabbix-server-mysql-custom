@@ -1,5 +1,5 @@
 #build with "docker build -t <tag>:<version> ."
-ARG UPSTREAM_TAG=6.4-ubuntu-latest
+ARG UPSTREAM_TAG=7.4-ubuntu-trunk
 FROM zabbix/zabbix-server-mysql:${UPSTREAM_TAG}
 
 USER root
